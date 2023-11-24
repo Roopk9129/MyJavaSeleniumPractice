@@ -6,7 +6,7 @@ import org.apache.poi.ss.usermodel.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.*;
 import org.testng.annotations.*;
-public class SpiceJetAutomation {
+public class SpiceJetAutomationtest {
 	@Test(dataProvider = "dp")
 	public void spiceJetAutomation(String PFName, String PLName, String phNo, String SID, String Email) throws Throwable {
 		ChromeOptions opt = new ChromeOptions();
