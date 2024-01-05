@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Nov 23 18:56:56 IST 2023</td>
+<td>Started on:</td><td>Fri Jan 05 11:01:49 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>9 seconds (9767 ms)</td>
+<tr><td>Total time:</td><td>3 seconds (3222 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,14 +75,32 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='neww.WorldOMeter.wordOMeter()'><b>wordOMeter</b><br>Test class: neww.WorldOMeter</td>
-<td><div><pre>java.io.IOException: Cannot run program &quot;cls&quot;: CreateProcess error=2, The system cannot find the file specified
-	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1143)
-	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073)
-	at java.base/java.lang.Runtime.exec(Runtime.java:594)
-	at java.base/java.lang.Runtime.exec(Runtime.java:418)
-	at java.base/java.lang.Runtime.exec(Runtime.java:315)
-	at neww.WorldOMeter.wordOMeter(WorldOMeter.java:19)
+<td title='neww.Ixigo.ixigo()'><b>ixigo</b><br>Test class: neww.Ixigo</td>
+<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=120.0.6099.130)
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f1d1016236fc5ba0e402eb470ae56d6b, actions {actions=[org.openqa.selenium.interactions.Sequence@5f18f9d2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.130, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\roopk\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56546}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56546/devtoo..., se:cdpVersion: 120.0.6099.130, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f1d1016236fc5ba0e402eb470ae56d6b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:688)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:605)
+	at org.openqa.selenium.interactions.Actions.perform(Actions.java:574)
+	at neww.Ixigo.ixigo(Ixigo.java:27)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -111,20 +129,32 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
-	at java.base/java.lang.ProcessImpl.create(Native Method)
-	at java.base/java.lang.ProcessImpl.&lt;init&gt;(ProcessImpl.java:499)
-	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:158)
-	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110)
-	... 33 more
-</pre></div><a href='#' onClick='toggleBox("stack-trace217827560", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace217827560'><pre>java.io.IOException: Cannot run program &quot;cls&quot;: CreateProcess error=2, The system cannot find the file specified
-	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1143)
-	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073)
-	at java.base/java.lang.Runtime.exec(Runtime.java:594)
-	at java.base/java.lang.Runtime.exec(Runtime.java:418)
-	at java.base/java.lang.Runtime.exec(Runtime.java:315)
-	at neww.WorldOMeter.wordOMeter(WorldOMeter.java:19)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1077464378", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1077464378'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=120.0.6099.130)
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f1d1016236fc5ba0e402eb470ae56d6b, actions {actions=[org.openqa.selenium.interactions.Sequence@5f18f9d2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.130, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\roopk\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56546}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56546/devtoo..., se:cdpVersion: 120.0.6099.130, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f1d1016236fc5ba0e402eb470ae56d6b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:688)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:605)
+	at org.openqa.selenium.interactions.Actions.perform(Actions.java:574)
+	at neww.Ixigo.ixigo(Ixigo.java:27)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -153,15 +183,9 @@ Caused by: java.io.IOException: CreateProcess error=2, The system cannot find th
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
-	at java.base/java.lang.ProcessImpl.create(Native Method)
-	at java.base/java.lang.ProcessImpl.&lt;init&gt;(ProcessImpl.java:499)
-	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:158)
-	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110)
-	... 33 more
 </pre></div></td>
-<td>9</td>
-<td>neww.WorldOMeter@66d3eec0</td></tr>
+<td>3</td>
+<td>neww.Ixigo@2805d709</td></tr>
 </table><p>
 </body>
 </html>

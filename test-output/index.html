@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\roopk\AppData\Local\Temp\testng-eclipse--568829692\testng-customsuite.xml</span>
+                    <span>C:\Users\roopk\AppData\Local\Temp\testng-eclipse--59323668\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -104,7 +104,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="neww.WorldOMeter" class="method navigator-link" hash-for-method="wordOMeter">wordOMeter</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="neww.Ixigo" class="method navigator-link" hash-for-method="ixigo">ixigo</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -122,21 +122,39 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">neww.WorldOMeter</span>
+              <span class="class-name">neww.Ixigo</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="wordOMeter">
-                  </a> <!-- wordOMeter -->
-                  <span class="method-name">wordOMeter</span>
-                  <div class="stack-trace">java.io.IOException: Cannot run program &quot;cls&quot;: CreateProcess error=2, The system cannot find the file specified
-	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1143)
-	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073)
-	at java.base/java.lang.Runtime.exec(Runtime.java:594)
-	at java.base/java.lang.Runtime.exec(Runtime.java:418)
-	at java.base/java.lang.Runtime.exec(Runtime.java:315)
-	at neww.WorldOMeter.wordOMeter(WorldOMeter.java:19)
+                  <a name="ixigo">
+                  </a> <!-- ixigo -->
+                  <span class="method-name">ixigo</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=120.0.6099.130)
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f1d1016236fc5ba0e402eb470ae56d6b, actions {actions=[org.openqa.selenium.interactions.Sequence@5f18f9d2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.130, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\roopk\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56546}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56546/devtoo..., se:cdpVersion: 120.0.6099.130, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f1d1016236fc5ba0e402eb470ae56d6b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:688)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:605)
+	at org.openqa.selenium.interactions.Actions.perform(Actions.java:574)
+	at neww.Ixigo.ixigo(Ixigo.java:27)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -165,12 +183,6 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
-	at java.base/java.lang.ProcessImpl.create(Native Method)
-	at java.base/java.lang.ProcessImpl.&lt;init&gt;(ProcessImpl.java:499)
-	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:158)
-	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110)
-	... 33 more
 
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -180,7 +192,7 @@ Caused by: java.io.IOException: CreateProcess error=2, The system cannot find th
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\roopk\AppData\Local\Temp\testng-eclipse--568829692\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\roopk\AppData\Local\Temp\testng-eclipse--59323668\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -189,7 +201,7 @@ Caused by: java.io.IOException: CreateProcess error=2, The system cannot find th
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;neww.WorldOMeter&quot;/&gt;
+      &lt;class name=&quot;neww.Ixigo&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -231,14 +243,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'wordOMeter')
-data.setCell(0, 2, 'neww.WorldOMeter')
-data.setCell(0, 3, 9727);
+data.setCell(0, 1, 'ixigo')
+data.setCell(0, 2, 'neww.Ixigo')
+data.setCell(0, 3, 3200);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 9 seconds</span>
+              <span class="suite-total-time">Total running time: 3 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -264,11 +276,11 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">neww.WorldOMeter</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">neww.Ixigo</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">wordOMeter</span>
+                <span class="method-name">ixigo</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->

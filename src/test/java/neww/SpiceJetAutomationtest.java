@@ -7,7 +7,8 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.*;
 import org.testng.annotations.*;
 public class SpiceJetAutomationtest {
-	@Test(dataProvider = "dp")
+	@Test(dataProvider = "dp",invocationCount = 5
+			)
 	public void spiceJetAutomation(String PFName, String PLName, String phNo, String SID, String Email) throws Throwable {
 		ChromeOptions opt = new ChromeOptions();
 		opt.addArguments("--disable-notifications");
@@ -25,7 +26,7 @@ public class SpiceJetAutomationtest {
 		driver.findElement(By.xpath("//div[@data-testid='Adult-testID-plus-one-cta']")).click();
 		driver.findElement(By.xpath("//div[text()='Passengers']")).click();
 		driver.findElement(By.xpath("//div[.='Students']")).click();
-		driver.findElement(By.xpath("//div[@data-testid='home-page-flight-cta']")).click();
+		driver.findElement(By.xpath("//div[.='Search Flight' and contains(@class,'css-1dbjc4n r-1awozwy r-z2wwpe r-1loqt21 r-18u37iz r-1777fci r-')]")).click();
 		driver.findElement(By.xpath("//div[@class='css-1dbjc4n r-13awgt0 r-18u37iz']/descendant::div[@class='css-1dbjc4n r-zso239']/*[name()='svg']")).click();
 		driver.findElement(By.xpath("//div[@class='css-1dbjc4n r-1awozwy r-z2wwpe r-1loqt21 r-18u37iz r-1777fci r-d9fdf6 r-1w50u8q r-ah5dr5 r-1otgn73']")).click();
 		driver.findElement(By.xpath("//div[@data-testid='continue-search-page-cta']")).click();
@@ -39,6 +40,7 @@ public class SpiceJetAutomationtest {
 		try {
 		driver.findElement(By.xpath("//div[.='Student ID Card*']/div/input")).sendKeys(SID);
 		}catch(Exception e) {
+			System.out.println(e.toString());
 		}
 		driver.findElement(By.xpath("//div[@class ='css-76zvg2 r-jwli3a r-poiln3 r-ubezar r-1kfrs79' and .='Next']")).click();
 		driver.findElement(By.xpath("//input[@data-testid='traveller-1-first-traveller-info-input-box']")).sendKeys(PFName+" S");
@@ -47,9 +49,12 @@ public class SpiceJetAutomationtest {
 		try {
 			driver.findElement(By.xpath("//div[.='Student ID Card*']/div/input")).sendKeys(SID);
 		} catch (Exception e) {
+			System.out.println(e.toString());
 		}
 		driver.findElement(By.xpath("//div[.='Continue']")).click();	
+		driver.quit();
 	}
+	
 	@DataProvider
 	public Object[][] dp() throws Throwable {
 		Workbook WB = WorkbookFactory.create(new FileInputStream("./src/main/resources/SpiceJetPassengerDetails.xlsx"));

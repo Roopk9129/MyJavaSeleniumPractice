@@ -1,6 +1,7 @@
 package neww;
 
 import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -16,10 +17,13 @@ public class WorldOMeter {
 		for (;;) {
 			String ele = driver.findElement(By.xpath("//div[@id='maincounter-wrap']/div/span")).getText();
 			System.out.println(ele);
-			try {
-				Runtime.getRuntime().exec("cls");
-			} catch (Exception e) {
-			}
+			System.out.flush();
 		}
+	}
+	@Test
+	public void wordOMeter1() {
+		System.out.println("roop");
+		System.out.print("\033c");
+		System.out.println("kumar");
 	}
 }

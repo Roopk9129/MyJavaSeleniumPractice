@@ -29,15 +29,12 @@ public class StoreAmazonImages {
 				sai.ts("H:\\Amazon\\Image_" + ranint + ".png", img);
 			}
 			catch (Exception e) {
-
 			}
 		}
 	}
-
 	public void ts(String path, WebElement ele) throws Throwable {
 		File src = ele.getScreenshotAs(OutputType.FILE);
 		File dst = new File(path);
-		FileHandler.copy(src, dst);
-		
+		FileHandler.copy(src, dst);	
 	}
 }
